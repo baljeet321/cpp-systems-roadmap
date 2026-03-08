@@ -21,7 +21,9 @@ class MiniVector{
     MiniVector& operator=(MiniVector &&other); /*Move assignment operator*/
     void push_back(int val); /*add element to the end*/
     void pop_back(); /*remove last element*/
-    int operator[](int index); /*Access element by access*/
+    int& operator[](int index); /*Access element by access*/
     size_t size(); /*Number of element stored*/
+
+    ~MiniVector(); /*Destructor*/
 
 };
